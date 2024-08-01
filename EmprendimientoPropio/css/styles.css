@@ -1,0 +1,152 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+  outline: none;
+  font-size: 1rem; /* Tamaño de fuente legible usando rem */
+}
+
+header {
+  background: linear-gradient(to bottom, #aaf7e0 0%, #ffffff 100%);
+  color: #040404;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  background: #222; /* Color más oscuro para mejor contraste */
+  padding: 0.5rem;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+nav li {
+  margin: 0 1rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav a:hover,
+nav a[aria-current="page"] {
+  background: #444; /* Color más oscuro para mejor contraste */
+}
+
+main {
+  padding: 2rem;
+}
+
+h2 {
+  color: #333;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+}
+
+table,
+th,
+td {
+  border: 1px solid #ddd;
+}
+
+th,
+td {
+  padding: 0.5rem;
+  text-align: left;
+}
+
+th {
+  background: #f4f4f4;
+}
+
+.product img {
+  max-width: 100%;
+  height: auto;
+}
+
+.hidden {
+  display: none;
+}
+
+button {
+  background: #222; /* Color más oscuro para mejor contraste */
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-size: 1rem; /* Tamaño de fuente usando rem */
+}
+
+button:hover {
+  background: #444; /* Color más oscuro para mejor contraste */
+}
+
+button:focus {
+  outline: 2px solid #fff; /* Enfoque visible */
+  outline-offset: 2px;
+}
+
+a:focus {
+  outline: 2px solid #fff; /* Enfoque visible */
+  outline-offset: 2px;
+}
+
+video {
+  width: 100%;
+  height: auto;
+}
+
+footer {
+  background: linear-gradient(to bottom, #ffffff 0%, #aaf7e0 100%);
+  padding: 10px;
+}
+
+.footer-social-icons a {
+  margin-right: 15px;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  header h1,
+  .logoImagen3 {
+    text-align: center;
+    position: static;
+  }
+
+  .logoImagen3 {
+    margin-top: 15px;
+  }
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 ratio */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  background: #000;
+  margin: 0 auto; /* Center the video */
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
